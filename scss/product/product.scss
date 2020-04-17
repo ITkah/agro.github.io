@@ -77,26 +77,3 @@
         font: bold 2rem 'Raleway', sans-serif;
     }
 }
-
-
-.product-box-link:nth-child(4) {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    @media (max-width: 990px) {
-        grid-column-start: auto;
-        grid-column-end: auto;
-    }
-}
-
-.product-box-link:last-child {
-    grid-column-start: 3;
-    grid-column-end: 5;
-    @media (max-width: 990px) {
-        grid-column-start: 1;
-        grid-column-end: 3;
-    }
-    @media (max-width: 768px) {
-        grid-column-start: auto;
-        grid-column-end: auto;
-    }
-}
