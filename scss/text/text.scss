@@ -1,0 +1,39 @@
+.title-xl {
+    color: #333;
+    text-transform: uppercase;
+    font: 900 2rem/40px 'Raleway', sans-serif;
+    margin-bottom: 15px;
+    text-align: center;
+    @media (max-width: 990px) {
+        font-size: 1.5rem;
+    }
+    span {
+        font-weight: 400;
+    }
+}
+
+.text-simple {
+    font: 400 1.2rem/26px 'Raleway', sans-serif;
+    text-align: center;
+    color: #b3b3b3;
+    @media (max-width: 990px) {
+        font-size: 1rem;
+    }
+}
+
+
+.letter-bg-title {
+    font: 900 5rem 'Raleway', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    background-image: url("https://ninetheme.com/themes/agro/wp-content/uploads/2019/02/special_offer_text_bg.jpg");
+    background-size: contain;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 120px 0;
+    @media (max-width: 990px) {
+        font-size: 4rem;
+        padding: 0;
+    }
+}

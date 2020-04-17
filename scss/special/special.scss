@@ -1,0 +1,35 @@
+.special {
+    .text-simple {
+        margin-bottom: 60px;
+        @media (max-width: 990px) {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.special-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    @media (max-width: 990px) {
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    @media (max-width: 576px) {
+        flex-direction: column;
+    }
+    .special-box {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        @media (max-width: 990px) {
+            margin: 15px;
+        }
+        img {
+            margin-bottom: 15px;
+        }
+        p {
+            font: 500 1rem 'Raleway', sans-serif;
+        }
+    }
+}

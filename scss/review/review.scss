@@ -1,0 +1,66 @@
+.review {
+    background: url(../img/review/review-bg.png) no-repeat center center;
+    background-size: cover;
+    padding: 40px;
+    @media (max-width: 990px) {
+        padding: 0 20px;
+    }
+    @media (max-width: 576px) {
+        padding: 0 20px;
+    }
+    .text-simple {
+        margin-bottom: 40px;
+    }
+}
+
+.review-container {
+    max-width: 990px;
+    margin: 0 auto;
+    position: relative;
+    &::before {
+        content: "“";
+        position:absolute;
+        color: #fcdb5a;
+        font: bold 5rem 'Raleway', sans-serif;
+        left: -50px;
+        top: -30px;
+        @media (max-width: 990px) {
+            display: none;
+        }
+    }
+}
+
+.review-box {
+    padding: 20px;
+    @media (max-width: 990px) {
+        padding: 0;
+    }
+    .review-box-text {
+        font: 400 1.2rem/26px 'Raleway', sans-serif;
+        margin-bottom: 20px;
+        @media (max-width: 990px) {
+            font-size: .87rem;
+        }
+    }
+    .review-info {
+        display: flex;
+        align-items: center;
+        img {
+            border-radius: 50%;
+            height:70px;
+            width: 70px;
+            object-fit: contain;
+            margin-right: 20px;
+            @media (max-width: 990px) {
+                height: 60px;
+                width: 60px;
+            }
+        }
+        .review-name {
+            font: bold 1.2rem 'Raleway', sans-serif;
+            @media (max-width: 990px) {
+                font-style: 1rem;
+            }
+        }
+    }
+}
