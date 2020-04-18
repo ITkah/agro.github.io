@@ -986,9 +986,145 @@ header {
       grid-column-start: auto;
       grid-column-end: auto; } }
 
+.product-info-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px; }
+  @media (max-width: 990px) {
+    .product-info-container {
+      grid-template-columns: 1fr; } }
+  .product-info-container .title-xl {
+    text-align: left; }
+  .product-info-container .text-simple {
+    text-align: left;
+    color: #333; }
+  .product-info-container .lozung {
+    font: 500 1.2rem/26px 'Raleway', sans-serif;
+    margin-bottom: 15px; }
+    @media (max-width: 990px) {
+      .product-info-container .lozung {
+        font-size: 1rem; } }
+  .product-info-container img {
+    max-width: 100%;
+    height: auto; }
+
+.product-other-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr; }
+  @media (max-width: 990px) {
+    .product-other-wrap {
+      grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 768px) {
+    .product-other-wrap {
+      grid-template-columns: 1fr; } }
+  .product-other-wrap .product-other-link {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    display: block;
+    height: 250px; }
+    .product-other-wrap .product-other-link::before {
+      content: '';
+      background: rgba(100, 114, 142, 0.6);
+      height: 100%;
+      width: 100%;
+      display: block;
+      position: absolute;
+      opacity: 0;
+      -webkit-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s; }
+    .product-other-wrap .product-other-link:hover::before {
+      opacity: 1; }
+    .product-other-wrap .product-other-link img {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      height: 100%;
+      width: 100%;
+      -o-object-fit: cover;
+         object-fit: cover;
+      left: 0;
+      margin: auto;
+      z-index: -2; }
+    .product-other-wrap .product-other-link p {
+      color: #fff;
+      z-index: 99;
+      position: relative;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      height: 100%;
+      font: bold 2rem 'Raleway', sans-serif; }
+
+.product-detail {
+  background: #f9f9f9;
+  padding: 60px 40px; }
+  @media (max-width: 990px) {
+    .product-detail {
+      padding: 60px 20px; } }
+  @media (max-width: 576px) {
+    .product-detail {
+      padding: 40px 20px; } }
+
+.product-detail-wrap {
+  padding: 45px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+  background: #fff; }
+  @media (max-width: 990px) {
+    .product-detail-wrap {
+      grid-template-columns: 1fr;
+      padding: 20px; } }
+  .product-detail-wrap .title-xl {
+    text-align: left; }
+  .product-detail-wrap .text-simple {
+    text-align: left; }
+  .product-detail-wrap img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block; }
+
+.product-description .container {
+  padding: 40px 0; }
+
+.product-description-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+  padding: 50px 0;
+  background: #fff; }
+  @media (max-width: 990px) {
+    .product-description-wrap {
+      grid-template-columns: 1fr;
+      padding: 30px 0; } }
+  .product-description-wrap .title-xl {
+    text-align: left; }
+  .product-description-wrap .text-simple {
+    text-align: left; }
+  .product-description-wrap img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block; }
+
 .review {
   background: url(../img/review/review-bg.png) no-repeat center center;
-  background-size: cover;
+  background-size: contain;
   padding: 40px; }
   @media (max-width: 990px) {
     .review {

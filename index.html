@@ -18,7 +18,7 @@
                     <div class="header-container">
                         <a href="/" class="link">Home</a>
                         <a href="about.html" class="link">About Us</a>
-                        <a href="#" class="link">Product</a>
+                        <a href="product.html" class="link">Product</a>
                         <a href="#">
                             <img src="img/icon/logo.png" alt="logo">
                         </a>
@@ -297,5 +297,12 @@
         crossorigin="anonymous"></script>
         <script src="js/libs/slick.min.js"></script>
         <script src="js/common.js"></script>
+        <script>    $('.review-slider').slick({
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2500,
+        });</script>
     </body>
 </html>

@@ -1,6 +1,6 @@
 .review {
     background: url(../img/review/review-bg.png) no-repeat center center;
-    background-size: cover;
+    background-size: contain;
     padding: 40px;
     @media (max-width: 990px) {
         padding: 0 20px;
