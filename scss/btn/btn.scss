@@ -5,4 +5,9 @@
     color: #333;
     text-transform: uppercase;
     font: 700 .87rem 'Raleway', sans-serif;
+    transition: .3s;
+    &:hover {
+        color: #333;
+        background: #fcdb5a;
+    }
 }

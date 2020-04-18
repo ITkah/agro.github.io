@@ -1,7 +1,7 @@
 .products-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 10px;
+    grid-gap: 25px;
     @media (max-width: 990px) {
         grid-template-columns: 1fr 1fr;
     }
@@ -75,5 +75,25 @@
         justify-content: center;
         height: 100%;
         font: bold 2rem 'Raleway', sans-serif;
+    }
+}
+
+
+.product-box-link:nth-child(4){
+    grid-column-start: 1;
+    grid-column-end: 3;
+    @media (max-width: 990px) {
+        grid-column-start: auto;
+        grid-column-end: auto;
+    }
+}
+
+
+.product-box-link:nth-child(7){
+    grid-column-start: 1;
+    grid-column-end: 3;
+    @media (max-width: 990px) {
+        grid-column-start: auto;
+        grid-column-end: auto;
     }
 }

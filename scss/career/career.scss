@@ -1,0 +1,124 @@
+.career-info-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    @media (max-width: 990px) {
+        grid-template-columns: 1fr;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    .title-xl {
+        text-align: left;
+    }
+    .text-simple {
+        text-align: left;
+        color: #333;
+        font-size: 1rem;
+    }
+}
+
+
+.career-ferm-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 20px;
+    @media (max-width: 990px) {
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 40px;
+        justify-items: center;
+    }
+}
+
+.career-ferm-box {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+    @media (max-width: 990px) {
+        margin: 0;
+    }
+    img {
+        margin-right: 20px;
+        @media (max-width: 990px) {
+            height: 65px;
+            max-width: 65px;
+            object-fit: contain;
+        }
+    }
+    .title {
+        color: #333;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+        font: 900 1.25rem 'Raleway', sans-serif;
+        @media (max-width: 990px) {
+            font-size: 1.125rem;
+        }
+    }
+    .info {
+        color: #333;
+        font: 500 1rem 'Raleway', sans-serif;
+    }
+}
+
+
+.career-about {
+    background: url(../img/main-section/main-section.jpg) no-repeat center center fixed;
+    background-size: cover;
+    .container {
+        padding: 60px 0;
+        padding-bottom: 0;
+    }
+    .title-xl {
+        color: #fff;
+    }
+    .text-simple {
+        color: #fff;
+    }
+}
+
+.career-about-container {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 40px;
+    grid-gap: 50px;
+    background: #fff;
+    @media (max-width: 990px) {
+        grid-template-columns: 1fr;
+        grid-gap: 25px;
+        padding: 30px 15px;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+}
+
+.career-about-info {
+    .title-xl {
+        text-align: left;
+        color: #000;
+    }
+    .text-simple {
+        color: #000;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+    .lozung {
+        color: #000;
+        font: 500 1.2rem/26px 'Raleway', sans-serif;
+        margin-bottom: 30px;
+        @media (max-width: 990px) {
+            font-size: 1rem;
+        }
+    }
+    a {
+        display: inline-block;
+    }
+}
