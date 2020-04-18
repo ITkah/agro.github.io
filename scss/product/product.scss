@@ -144,6 +144,9 @@
         width: 100%;
         display: block;
         height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
         &::before {
             content: '';
             background: rgba(100,114,142,0.6);
@@ -175,11 +178,16 @@
             color: #fff;
             z-index: 99;
             position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100%;
             font: bold 2rem 'Raleway', sans-serif;
+            padding: 0 15px;
+        }
+        span {
+            color: #fff;
+            z-index: 99;
+            position: relative;
+            font: 500 1rem 'Raleway', sans-serif;
+            padding: 10px 15px;
+            top: -5px;
         }
     }
 }
